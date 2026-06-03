@@ -1,0 +1,40 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- GLOW LAYER -->
+    <item>
+        <shape>
+            <gradient
+                
+                android:angle="270"/>
+        </shape>
+    </item>
+
+    <!-- MAIN SHAPE -->
+    <item>
+        <vector
+            android:width="300dp"
+            android:height="200dp"
+            android:viewportWidth="300"
+            android:viewportHeight="200">
+
+            <path
+                android:fillColor="#FFFFFF"
+                android:pathData="M30,25
+        Q0,30 0,60
+
+        L0,160
+        Q0,200 30,200
+
+        L250,200
+        Q300,200 300,160
+
+        L300,40
+        Q300,0 270,5
+
+        L30,25
+
+        Z"/>
+        </vector>
+    </item>
+
+</layer-list>

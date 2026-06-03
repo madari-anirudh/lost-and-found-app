@@ -1,0 +1,42 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- SHADOW / GLOW -->
+    <item>
+        <shape>
+            <solid android:color="#10FFFFFF"/>
+            <corners android:radius="30dp"/>
+        </shape>
+    </item>
+
+    <!-- MAIN SHAPE -->
+     <item>
+        <vector
+            android:width="300dp"
+            android:height="200dp"
+            android:viewportWidth="300"
+            android:viewportHeight="200">
+
+
+            <path
+                android:fillColor="#FFFFFF"
+                android:pathData="M30,0
+            Q0,0 0,40
+
+
+            L0,170
+            Q0,200 30,195
+
+
+            L270,165
+            Q300,160 300,130
+
+
+            L300,40
+            Q300,0 250,0
+
+
+            Z"/>
+        </vector>
+    </item>
+
+</layer-list>

@@ -1,0 +1,67 @@
+       <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TOP TEXT -->
+
+           <!--  SHIMMER LOADING -->
+
+           <!--  RECYCLER VIEW -->
+           <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+                   android:orientation="vertical">
+           <TextView
+               android:id="@+id/titleText"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="My Reported Items"
+               android:textAlignment="center"
+               android:textSize="26sp"
+               android:textStyle="bold" />
+            </LinearLayout>
+
+           <com.facebook.shimmer.ShimmerFrameLayout
+               android:id="@+id/shimmerLayout"
+               android:layout_width="match_parent"
+               android:layout_height="376dp"
+               android:layout_marginTop="75dp"
+               app:shimmer_auto_start="true">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="344dp"
+                   android:layout_marginTop="5dp"
+                   android:orientation="vertical">
+
+                   <!-- Repeat shimmer items -->
+                   <include layout="@layout/shimmer_item" />
+
+                   <include layout="@layout/shimmer_item" />
+
+                   <include layout="@layout/shimmer_item" />
+
+               </LinearLayout>
+
+           </com.facebook.shimmer.ShimmerFrameLayout>
+
+           <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myItemsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <!--  EMPTY TEXT -->
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No items found"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

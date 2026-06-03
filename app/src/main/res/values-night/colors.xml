@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Background -->
+    <color name="background">#121212</color>
+
+    <!-- Card Background -->
+    <color name="card">#1E1E1E</color>
+
+    <!-- Primary Text -->
+    <color name="text_primary">#FFFFFF</color>
+
+    <!-- Secondary Text -->
+    <color name="text_secondary">#B0B0B0</color>
+
+    <!-- Accent -->
+    <color name="accent">#4CAF50</color>
+
+    <!-- Divider -->
+    <color name="divider">#2A2A2A</color>
+
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+<LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="30dp"
+            android:elevation="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agdasima"
+        android:text="Create Account"
+        android:textColor="#DA3CF0"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- MAIN CONTAINER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="409dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <!-- TOP DIAGONAL BOX -->
+        <LinearLayout
+            android:id="@+id/topBox"
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_topbox_signup"
+            android:elevation="12dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- NAME -->
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Name"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#555" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000" />
+
+            <!-- EMAIL -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Email"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#555" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000" />
+
+            <!-- PASSWORD -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#555" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000" />
+
+        </LinearLayout>
+
+        <!-- BOTTOM DIAGONAL BOX -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+
+            android:layout_marginTop="30dp"
+            android:elevation="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- SIGNUP BUTTON -->
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/signupBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_rounded_button"
+                    android:text="SIGN UP"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
