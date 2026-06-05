@@ -9,6 +9,8 @@ private String location;
 private String phone;
 private String type;
 
+
+
 public ItemRequest(String title, String description, String location, String phone, String type) {
     this.title = title;
     this.description = description;
