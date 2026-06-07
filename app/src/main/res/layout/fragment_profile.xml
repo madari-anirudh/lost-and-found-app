@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,12 +13,13 @@
 
         <!-- TITLE -->
         <TextView
+            android:text="Profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Profile"
             android:textSize="22sp"
-            android:textStyle="bold" />
+            android:textStyle="bold" 
+            android:textColor="@color/text_primary"/>
 
         <!-- AVATAR -->
         <ImageView
@@ -37,7 +38,8 @@
             android:layout_gravity="center"
             android:text="User Name"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold" 
+            android:textColor="@color/text_primary"/>
 
         <!-- EMAIL -->
         <TextView
@@ -47,17 +49,17 @@
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:text="email@gmail.com"
-            android:textColor="#666666"
+            android:textColor="@color/text_secondary"
             android:textSize="14sp" />
 
 
         <!-- OPTIONS -->
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="4dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card">
 
     <LinearLayout
         android:orientation="vertical"
@@ -86,7 +88,8 @@
         android:layout_marginStart="12dp"
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_primary"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -106,7 +109,8 @@
             android:gravity="center_vertical"
             android:background="?attr/selectableItemBackground"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary">
 
             <ImageView
                 android:src="@android:drawable/ic_menu_help"
@@ -136,7 +140,8 @@
             android:gravity="center_vertical"
             android:background="?attr/selectableItemBackground"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary">
 
             <ImageView
                 android:src="@android:drawable/ic_menu_share"
@@ -166,7 +171,8 @@
             android:gravity="center_vertical"
             android:background="?attr/selectableItemBackground"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary">
 
             <ImageView
                 android:src="@android:drawable/ic_menu_info_details"
@@ -184,7 +190,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#888"
+                android:textColor="@color/text_secondary"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -198,7 +204,7 @@
     android:layout_marginTop="16dp"
     app:cardCornerRadius="16dp"
     app:cardElevation="3dp"
-    app:cardBackgroundColor="#FFF1F1">
+    app:cardBackgroundColor="@color/logout_bg">
 
     <LinearLayout
         android:id="@+id/logoutBtn"

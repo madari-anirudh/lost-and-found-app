@@ -9,7 +9,8 @@
     android:layout_marginEnd="12dp"
 
     card_view:cardCornerRadius="22dp"
-    card_view:cardElevation="8dp">
+    card_view:cardElevation="8dp"
+    card_view:cardBackgroundColor="@color/card">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +32,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:text="Item Title"
-                android:textColor="#212121"
+                android:textColor="@color/text_primary"
                 android:textSize="25sp"
                 android:textStyle="bold|italic" />
 
@@ -47,7 +48,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             android:text="📍 Campus"
-            android:textColor="#3C3838"
+            android:textColor="@color/text_secondary"
             android:textSize="19sp" />
 
         <TextView
@@ -57,7 +58,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             android:text="Date"
-            android:textColor="#3C3838"
+            android:textColor="@color/text_secondary"
             android:textSize="19sp" />
 
         <!-- STATUS BADGE -->

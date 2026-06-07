@@ -14,7 +14,7 @@ import com.example.lostandfound.api.RetrofitClient;
 import com.example.lostandfound.models.UserResponse;
 import com.facebook.shimmer.Shimmer;
 import com.facebook.shimmer.ShimmerFrameLayout;
-
+import androidx.appcompat.app.AlertDialog;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -33,6 +33,24 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // ✅ AUTO LOGIN
+        String token = getSharedPreferences("APP", MODE_PRIVATE)
+                .getString("TOKEN", "");
+
+        if (!token.isEmpty()) {
+
+            startActivity(
+                    new Intent(
+                            MainActivity.this,
+                            DashboardActivity.class
+                    )
+            );
+
+            finish();
+            return;
+        }
+
         setContentView(R.layout.activity_main);
 
         email = findViewById(R.id.email);
@@ -90,6 +108,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loginUser() {
+        if (!NetworkUtil.isConnected(this)) {
+
+            new AlertDialog.Builder(this)
+                    .setTitle("No Internet Connection")
+                    .setMessage("Please check your Wi-Fi or Mobile Data.")
+                    .setPositiveButton("OK", null)
+                    .show();
+
+            return;
+        }
 
         String emailStr = email.getText().toString().trim();
 

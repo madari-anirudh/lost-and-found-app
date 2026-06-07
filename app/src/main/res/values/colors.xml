@@ -9,4 +9,8 @@
     <color name="accent">#4CAF50</color>
     <color name="divider">#E0E0E0</color>
     <color name="purple_500">#6C63FF</color>
+    <color name="bottom_nav_bg">#BCB5AE</color>
+    <color name="primary_button">#61C7B8</color>
+    <color name="logout_bg">#FFF1F1</color>
+    <color name="shimmer_bg">#DDDDDD</color>
 </resources>

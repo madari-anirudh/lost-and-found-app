@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/agdasima"
         android:text="Create Account"
-        android:textColor="#DA3CF0"
+        android:textColor="@color/accent"
         android:textSize="28sp"
         android:textStyle="bold" />
     </LinearLayout>
@@ -55,13 +55,13 @@
                 android:background="@android:color/transparent"
                 android:hint="Name"
                 android:padding="10dp"
-                android:textColor="#000"
-                android:textColorHint="#555" />
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:background="#000" />
+                android:background="@color/divider" />
 
             <!-- EMAIL -->
             <EditText
@@ -72,13 +72,13 @@
                 android:background="@android:color/transparent"
                 android:hint="Email"
                 android:padding="10dp"
-                android:textColor="#000"
-                android:textColorHint="#555" />
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:background="#000" />
+                android:background="@color/divider" />
 
             <!-- PASSWORD -->
             <EditText
@@ -90,13 +90,13 @@
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:padding="10dp"
-                android:textColor="#000"
-                android:textColorHint="#555" />
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:background="#000" />
+                android:background="@color/divider" />
 
         </LinearLayout>
 
@@ -124,7 +124,7 @@
                     android:layout_height="50dp"
                     android:background="@drawable/bg_rounded_button"
                     android:text="SIGN UP"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@android:color/white"
                     android:textStyle="bold" />
 
             </com.facebook.shimmer.ShimmerFrameLayout>

@@ -3,7 +3,7 @@
     android:layout_height="wrap_content"
     android:padding="12dp"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="@color/card"
     android:layout_marginBottom="8dp">
 
     <TextView
@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:text="Notification message"
         android:textSize="14sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"/>
 
     <TextView
         android:id="@+id/date"
@@ -20,6 +21,6 @@
         android:layout_height="wrap_content"
         android:text="Date"
         android:textSize="12sp"
-        android:textColor="#666"/>
+        android:textColor="@color/text_secondary"/>
 
 </LinearLayout>

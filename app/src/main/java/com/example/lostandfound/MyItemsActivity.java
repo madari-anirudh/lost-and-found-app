@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -47,6 +47,16 @@ public class MyItemsActivity extends AppCompatActivity {
     }
 
     private void loadItems() {
+        if (!NetworkUtil.isConnected(this)) {
+
+            new AlertDialog.Builder(this)
+                    .setTitle("No Internet Connection")
+                    .setMessage("Please check your Wi-Fi or Mobile Data.")
+                    .setPositiveButton("OK", null)
+                    .show();
+
+            return;
+        }
 
         //  TOKEN CHECK (PREVENT AUTO LOGOUT CRASH)
         String token = getSharedPreferences("APP", MODE_PRIVATE)

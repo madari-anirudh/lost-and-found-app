@@ -1,21 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Background -->
     <color name="background">#121212</color>
+<color name="card">#1E1E1E</color>
 
-    <!-- Card Background -->
-    <color name="card">#1E1E1E</color>
+<color name="text_primary">#FFFFFF</color>
+<color name="text_secondary">#BDBDBD</color>
 
-    <!-- Primary Text -->
-    <color name="text_primary">#FFFFFF</color>
+<color name="accent">#4CAF50</color>
 
-    <!-- Secondary Text -->
-    <color name="text_secondary">#B0B0B0</color>
+<color name="divider">#2C2C2C</color>
 
-    <!-- Accent -->
-    <color name="accent">#4CAF50</color>
-
-    <!-- Divider -->
-    <color name="divider">#2A2A2A</color>
-
+<color name="bottom_nav_bg">#1E1E1E</color>
+<color name="primary_button">#66D9C8</color>
+<color name="logout_bg">#3A1E1E</color>
+<color name="shimmer_bg">#333333</color>
 </resources>

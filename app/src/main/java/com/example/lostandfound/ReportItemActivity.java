@@ -3,7 +3,7 @@ package com.example.lostandfound;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.*;
-
+import androidx.appcompat.app.AlertDialog;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
@@ -152,6 +152,16 @@ public class ReportItemActivity extends AppCompatActivity {
 
         ApiService api = RetrofitClient.getInstance().create(ApiService.class);
 
+        if (!NetworkUtil.isConnected(this)) {
+
+            new AlertDialog.Builder(this)
+                    .setTitle("No Internet Connection")
+                    .setMessage("Please check your Wi-Fi or Mobile Data.")
+                    .setPositiveButton("OK", null)
+                    .show();
+
+            return;
+        }
         api.createItem(
                 "Bearer " + token,
                 titleBody,

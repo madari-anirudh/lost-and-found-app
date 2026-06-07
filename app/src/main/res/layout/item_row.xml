@@ -7,7 +7,7 @@
     android:layout_margin="10dp"
     card_view:cardCornerRadius="16dp"
     card_view:cardElevation="6dp"
-    card_view:cardBackgroundColor="#FFFFFF">
+    card_view:cardBackgroundColor="@color/card">
 
     <LinearLayout
         android:orientation="vertical"
@@ -30,7 +30,7 @@
                 android:text="Item Title"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#222"/>
+                android:textColor="@color/text_primary"/>
 
             <!-- STATUS BADGE -->
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:text="Lost"
                 android:textStyle="bold"
-                android:textColor="#444"/>
+                android:textColor="@color/text_secondary"/>
 
             <TextView
                 android:id="@+id/date"
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text=" • 29 Apr"
                 android:textSize="12sp"
-                android:textColor="#888"
+                android:textColor="@color/text_secondary"
                 android:layout_marginStart="6dp"/>
         </LinearLayout>
 
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Location"
-            android:textColor="#555"
+            android:textColor="@color/text_secondary"
             android:textStyle="bold" />
 
         <!-- PHONE -->
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="phone"
-            android:textColor="#555"
+            android:textColor="@color/text_secondary"
             android:textStyle="bold" />
 
         <!-- DESCRIPTION -->
@@ -96,7 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Description goes here..."
-            android:textColor="#666"
+            android:textColor="@color/text_secondary"
             android:layout_marginTop="6dp"
             android:maxLines="2"
             android:ellipsize="end"/>

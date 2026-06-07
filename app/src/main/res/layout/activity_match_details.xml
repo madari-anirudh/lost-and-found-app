@@ -3,7 +3,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7FB">
+    android:background="@color/background">
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,7 +19,7 @@
             android:textSize="26sp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:textColor="#222"
+            android:textColor="@color/text_primary"
             android:layout_marginBottom="20dp"/>
 
         <!-- 🔥 CARD -->
@@ -29,7 +29,7 @@
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="18dp"
             app:cardElevation="8dp"
-            app:cardBackgroundColor="#FFFFFF"
+            app:cardBackgroundColor="@color/card"
             xmlns:app="http://schemas.android.com/apk/res-auto">
 
             <LinearLayout
@@ -44,7 +44,7 @@
                     android:text="📦 Item Name"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#333"
+                    android:textColor="@color/text_primary"
                     android:layout_marginBottom="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -54,7 +54,7 @@
                     android:id="@+id/finderName"
                     android:text="👤 Name: John Doe"
                     android:textSize="16sp"
-                    android:textColor="#555"
+                    android:textColor="@color/text_secondary" 
                     android:layout_marginTop="6dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -64,7 +64,7 @@
                     android:id="@+id/finderPhone"
                     android:text="📞 Phone: 9876543210"
                     android:textSize="16sp"
-                    android:textColor="#555"
+                    android:textColor="@color/text_secondary" 
                     android:layout_marginTop="6dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -74,7 +74,7 @@
                     android:id="@+id/finderLocation"
                     android:text="📍 Location: Campus"
                     android:textSize="16sp"
-                    android:textColor="#555"
+                    android:textColor="@color/text_secondary" 
                     android:layout_marginTop="6dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -88,25 +88,24 @@
             android:id="@+id/callFinderBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#4CAF50"
             android:text="📞 Call Finder"
             android:textAllCaps="false"
-            android:textSize="16sp"
             android:textColor="#FFFFFF"
-            android:backgroundTint="#4CAF50"
-            
-            android:layout_marginBottom="10dp"/>
+
+            android:textSize="20sp" />
 
         <!-- ✅ CONFIRM BUTTON -->
         <Button
             android:id="@+id/confirmBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:backgroundTint="#2196F3"
             android:text="✅ Confirm Item Received"
             android:textAllCaps="false"
-            android:textSize="16sp"
             android:textColor="#FFFFFF"
-            android:backgroundTint="#2196F3"
-            />
+            android:textSize="20sp" />
 
     </LinearLayout>
 

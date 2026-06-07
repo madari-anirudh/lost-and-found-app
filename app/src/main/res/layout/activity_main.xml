@@ -44,7 +44,7 @@
                     android:layout_width="333dp"
                     android:layout_height="160dp"
                     android:layout_marginTop="10dp"
-                    android:background="@color/white"
+                    android:background="@color/card"
                     android:orientation="vertical"
                     android:padding="12dp">
 
@@ -59,8 +59,8 @@
                         android:inputType="textEmailAddress"
                         android:minHeight="48dp"
                         android:padding="12dp"
-                        android:textColor="#000"
-                        android:textColorHint="#888" />
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary" />
 
                     <!-- BLACK LINE -->
 
@@ -68,7 +68,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginBottom="10dp"
-                        android:background="#000000" />
+                        android:background="@color/divider" />
 
                     <!-- PASSWORD -->
 
@@ -81,15 +81,15 @@
                         android:inputType="textPassword"
                         android:minHeight="48dp"
                         android:padding="12dp"
-                        android:textColor="#000"
-                        android:textColorHint="#888" />
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary" />
 
                     <!-- BLACK LINE -->
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#000000" />
+                        android:background="@color/divider" />
 
                     <!-- FORGOT PASSWORD -->
 
@@ -100,7 +100,7 @@
                         android:layout_gravity="end"
                         android:layout_marginTop="10dp"
                         android:text="Forgot Password?"
-                        android:textColor="#61c7b8"
+                        android:textColor="@color/primary_button"
                         android:textSize="13sp"
                         android:textStyle="bold" />
 
@@ -120,12 +120,12 @@
                         android:id="@+id/loginBtn"
                         android:layout_width="85dp"
                         android:layout_height="50dp"
-                        android:backgroundTint="#6eebd8"
+                        android:backgroundTint="@color/primary_button"
                         android:gravity="center"
                         android:padding="0dp"
                         android:text="Login"
                         android:textAllCaps="false"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/text_primary"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -161,8 +161,8 @@
         android:background="@drawable/bg_white_button"
         android:text="Create Account"
         android:textAllCaps="false"
-        android:textColor="#61c7b8"
+        android:textColor="@color/primary_button"
         android:textSize="16sp"
         android:textStyle="bold" />
 
-</LinearLayout>
+</LinearLayout> 
